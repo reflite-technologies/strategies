@@ -1,0 +1,685 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+
+    transition: all 1s ease-in;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 208, 20);
+    height: 3pc;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.time{
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    margin-left: 40px;
+}
+.fa{
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 100%;
+}
+.work-time{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.icons{
+    margin-right: 20px;
+}
+.fa-bars{
+    font-size: 25px;
+    cursor: pointer;
+    color: #f9c10b;
+}
+#menu{
+    cursor: pointer;
+    display: none;
+}
+#menulist{
+    display: none;
+}
+.fa-brands{
+    font-size: 17px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    padding-top: 5px;
+}
+
+nav{
+    width: 100%;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    display: flex;
+    position: static;
+    justify-content: space-between;
+   /* background-color: red;*/
+    height: 5pc;
+    align-items: center;
+}
+.logo{
+    margin-left: 40px;
+}
+.logo h1{
+     color: rgb(250, 208, 20);
+}
+.logo h1 span{
+    color: red;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    margin-right: 30px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li small{
+    font-weight: 900;
+    color: rgb(250, 208, 20);;
+}
+nav ul li a{
+    text-decoration: none;
+    color: gray;
+}
+li a:hover{
+    color: red;
+}
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+#home{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    
+}
+#home1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 180px;
+    padding-top: 180px;
+    background: url(images/slide/christina-wocintechchat-com-NDoVgcS_lZM-unsplash.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2px;
+
+    display: block;
+}
+#home1::before{
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: linear-gradient(to top, #000000, transparent 90%);
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.7;
+    pointer-events: none;
+    position: absolute;
+}
+#home2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 180px;
+    padding-top: 180px;
+    background: url(images/slide/jason-goodman-0K7GgiA8lVE-unsplash.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2px;
+
+    display: none;
+}
+#home2::before{
+    height: 70%;
+    width: 100%;
+    content: "";
+    background: linear-gradient(to top, #000000, transparent 90%);
+    top: 0;
+    padding-bottom: 180px;
+    right: 0;
+    left: 0;
+    opacity: 0.7;
+    pointer-events: none;
+    position: absolute;
+}
+
+.nextprev{
+    justify-self: end;
+    position: absolute;
+    top: 28pc;
+    margin-right: 20px;
+}
+.nav{
+    height: 5pc;
+    width: 5pc;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    background: red;
+    color: #fff;
+}
+.content{
+    align-self: center;
+    margin-top: 10pc;
+    width: 27pc;
+    color: #fff;
+    margin-left: 20px;
+}
+.content h1{
+    font-size: 42px;
+}
+.content span{
+    color: #f9c10b;
+}
+.content button{
+    height: 4pc;
+    width: 10pc;
+    border-radius: 30px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.content .fa{
+    background-color: transparent;
+    border: 3px solid #fff;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: border 1s ease-in-out;
+}
+.content button:hover{
+    background-color: #f9c10b;
+}
+.content .fa:hover{
+    border: 3px solid #f9c10b;
+}
+
+#about{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    padding-top: 14pc;
+}
+#about .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-image{
+    background: url(images/peter-jones-WZROBIlY8Rg-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left: 40px;
+    height: 37pc;
+    width: 41%;
+    border-radius: 20px;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    align-content: end;
+     background: linear-gradient(to top, #000000, transparent 90%);
+     opacity: 0.7;
+     padding-bottom: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.about-content{
+    width: 45%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.about-content .main{
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgb(173, 173, 173);
+}
+.about-content .main p{
+    color: gray;
+}
+span{
+    color: #f9c10b;
+}
+.sub-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.join{
+    background-color: red;
+    color: white;
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.join h3{
+    margin-left: 20px;
+}
+.join button{
+    height:3pc;
+    width: 7pc;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    border-radius: 40px;
+    border: none;
+    background-color: #f9c10b;
+    color: #fff;
+    font-size: 21px;
+    cursor: pointer;
+    transition: all .5s ease-in;
+    margin-top: 20px;
+}
+.join button:hover{
+    background-color: #fff;
+    color: #000000;
+}
+.sub-main{
+    background-color: #f9c10b;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    height: 12pc;
+}
+.sub-main h3{
+    margin-left: 20px;
+}
+.sub-main p{
+    margin-left: 20px;
+}
+
+#services{
+    background-color: rgb(222, 220, 220);
+    min-height: 50vh;
+    width: 100%;
+    padding-top: 1px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+#services .head{
+    margin-top: 50px;
+    justify-self: center;
+    margin-top: 50px;
+}
+#services .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#services .items{
+    width: 48%;
+    margin-left: 40px;
+}
+#services .item{
+    border-left: 8px solid gray;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+#services .active h1, #services .item:hover h1{
+    color: #f9c10b;
+}
+#services .item:hover, #services .item:focus,
+#services .active{
+    border-left: 8px solid red;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 0 30px gray;
+}
+
+
+#all-items{
+    width: 40%;
+    margin-left: 30px;
+}
+.image-service{
+    width: 100%;
+}
+.image-service img{
+    width: 100%;
+    
+}
+
+#content-strategy{
+    display: flex;
+    gap: 20px;
+}
+.paragraph2{
+    margin-top: 30px;
+}
+#planning-item{
+    display: none;
+}
+#content-item{
+    display: none;
+}
+#business-item{
+    display: block;
+}
+#services p{
+    color: gray;
+}
+
+#projects{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#projects .header{
+    justify-self: center;
+}
+#projects .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+#projects .sub-container{
+    height: 20pc;
+    width:20pc;
+    /*background-color: red;*/
+    margin-left: 5pc;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.sub-container a{
+    text-decoration: none;
+    color: #fff;
+}
+#projects .image{
+    background: url(images/projects/pj-gal-szabo-CIXXIWxxec4-unsplash.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform .5s ease-in;
+}
+#projects .image:hover{
+    transform: scale(1.1);
+}
+.wrap{
+    align-content: end;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #000000, transparent 90%);
+    color: #fff;
+}
+.wrap .details{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition: all .5s ease-in;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.wrap:hover .details{
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+.details .arrow{
+    margin-right: 40px;
+    transition: all .5s ease-in;
+    align-self: center;
+}
+.wrap:hover .arrow{
+    margin-right: 90px;
+}
+#arrow{
+    height: 37px;
+    width: 37px;
+    background-color: red;
+    align-content: center;
+    font-size: 20px;
+    transition: all .5 ease-in;
+}
+.wrap:hover #arrow{
+    background-color: #f9c10b;
+}
+
+
+.custom-shape-divider-bottom-1763283420 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1763283420 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 200px;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1763283420 .shape-fill {
+    fill: #f9c10b;
+    height: 100%;
+    z-index: 1;
+}
+#contacts{
+    min-height: 50vh;
+    width: 100%;
+    padding-top: 20px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f9c10b;
+    padding-bottom: 20px;
+}
+#contacts .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.message{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 40%;
+    height: fit-content;
+   /* background-color: red;*/
+}
+.differ{
+    color: #fff;
+}
+#person{
+    width: 45%;
+    height: 2rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    margin-left: 5px;
+    font-size: 17px;
+}
+textarea{
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-bottom: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.submit{
+    width: 91%;
+    margin-left: 10px;
+    height: 3pc;
+    background-color: red;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+.submit:hover{
+    background-color: #fff;
+    color: #000000;
+}
+textarea:focus, #person:focus, #person:hover, textarea:hover{
+    background-color: #fff;
+    border: none;
+}
+.location{
+    background-color: #fff;
+    width: 35%;
+    margin-right: 40px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px gray;
+    padding-left: 20px;
+}
+iframe{
+    width: 26pc;
+    height: 20pc;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+
+}
+#contacts .fa{
+    font-size: 25px;
+    align-items: center;
+    color: #f9c10b;
+    margin-bottom: 10px;
+}
+#contacts .cont{
+    color: gray;
+    margin-left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+
+footer{
+    align-content: center;
+    background-color: #f9c10b;
+    text-align: center;
+    height: 3pc;
+    padding-top: 2px;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+footer:hover a{
+    color: #f9c10b;
+}
+
+#details-home{
+    height: 70vh;
+    width: 100%;
+}
+#details-home .container{
+    height: 100%;
+    width: 100%;
+    background: url(images/jason-goodman-MUZFKa_mttU-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+#details-home .container .wrapping{
+    align-content: center;
+    justify-items: center;
+    background: linear-gradient(to top, #000000, transparent 90%);
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+.wrapping h1{
+    font-size: 42px;
+}
+#about-details{
+    min-height: 50vh;
+    width: 100%;
+}
+#about-details .first-head{
+    padding: 19px;
+}
+#about-details #container{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#sub-image{
+    height: 36pc;
+    width: 100%;
+    border-radius: 20px;
+}
+#container .sub-container{
+    width: 43%;
+    margin-left: 4pc;
+}
+.sub-container p{
+    color: gray;
+}
+.container2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.sub-container2{
+    width: 30%;
+    height: fit-content;
+    margin-left: 30px;
+    margin-top: 2rem;
+}
+.sub-container2 img{
+    width: 100%;
+    border-radius: 20px;
+}
+.sub-container2 p{
+    color: gray;
+}

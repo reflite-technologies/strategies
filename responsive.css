@@ -1,0 +1,123 @@
+/*tablets*/
+@media (min-width: 768px) and (max-width: 1023px){
+    #list li{
+        display: flex;
+        gap: 10px;
+    }
+    .about-image{
+        width: 60%;
+        margin-left: 10pc;
+    }
+    .about-content{
+        width: 60%;
+        margin-left: 10pc;
+    }
+    .join button{
+        margin-left: 20%;
+    }
+    #projects .sub-container{
+        margin-left: 10pc;
+        width: 60%;
+    }
+    #contacts .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .message, .location{
+        margin-left: 10pc;
+        width: 60%;
+    }
+    #about-details .sub-container2{
+        width: 50%;
+        margin-left: 10pc;
+    }
+    #about-details .sub-container{
+        width: 70%;
+        margin-left: 10pc;
+    }
+    .first-head{
+        margin-left: 5pc;
+    }
+}
+/*mobile devices*/
+@media (max-width: 767px){
+    .icons{
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    header{
+        height: fit-content;
+        padding-top: 10px;
+    }
+    #list{
+        display: none;
+    }
+    #menu{
+        display: block;
+       /* background-color: red;*/
+        aspect-ratio: 1;
+        width: 5px;
+        margin-top: 20px;
+        margin-right: 32px;
+    }
+    .container1{
+        display: flex;
+        justify-content: space-between;
+       /* background-color: green;*/
+        width: 100%;
+    }
+    #menulist{
+        display: block;
+        justify-items: center;
+        padding-bottom: 20px;
+        display: none;
+    }
+    #menulist li{
+        padding-bottom: 20px;
+        font-size: 22px;
+    }
+    nav{
+        display: block;
+        height: fit-content;
+    }
+    .about-image{
+        width: 90%;
+        margin-right: 20px;
+    }
+    .about-content{
+        width: 90%;
+        margin-right: 20px;
+    }
+    .join button{
+        margin-left: 35px;
+    }
+    #services .items{
+        width: 90%;
+        margin-right: 20px;
+    }
+    #services #all-items{
+        width: 90%;
+        margin-top: 25px;
+    }
+    #contacts .container{
+        display: flex;
+        flex-direction: column;
+    }
+    textarea{
+        width: 90%;
+    }
+    .message{
+        width: 90%;
+    }
+    .location{
+        width: 90%;
+    }
+    #about-details .sub-container{
+        width: 90%;
+        margin-right: 2pc;
+    }
+    #about-details .sub-container2{
+        width: 90%;
+    }
+}
